@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js" data-theme="neutral">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="АРОМАТИКА — авторские кофейные напитки, которые хочется сначала рассмотреть, а потом попробовать. Вкус начинается с цвета.">
+  <meta name="keywords" content="АРОМАТИКА, кофейня, авторские напитки, ванильный раф, малиновый раф, фисташковый латте, кофе, Москва">
+  <meta name="theme-color" content="#f7f4ef">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="АРОМАТИКА — Вкус начинается с цвета">
+  <meta property="og:description" content="Авторские кофейные напитки, в которых встречаются вкус, аромат и цвет.">
+  <meta property="og:image" content="assets/gallery/cafe_main.png">
+  <meta property="og:locale" content="ru_RU">
+  <title>АРОМАТИКА — Вкус начинается с цвета</title>
+  <link rel="icon" type="image/png" href="assets/logo/logo_base.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- Динамический фон alcohol ink: одна фактура в четырёх цветовых гаммах -->
+  <div class="ink" aria-hidden="true">
+    <div class="ink__layer ink__layer--base"></div>
+    <div class="ink__layer ink__layer--velvet"></div>
+    <div class="ink__layer ink__layer--blush"></div>
+    <div class="ink__layer ink__layer--sage"></div>
+    <div class="ink__veil"></div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="АРОМАТИКА — на главную">
+        <span class="logo-stack logo-stack--header" aria-hidden="true">
+          <img class="logo-stack__img is-active" src="assets/logo/logo_base.png" data-logo="base" alt="" width="1200" height="1200">
+          <img class="logo-stack__img" src="assets/logo/logo_velvet.png" data-logo="velvet" alt="" width="1200" height="1200">
+          <img class="logo-stack__img" src="assets/logo/logo_blush.png" data-logo="blush" alt="" width="1200" height="1200">
+          <img class="logo-stack__img" src="assets/logo/logo_sage.png" data-logo="sage" alt="" width="1200" height="1200">
+        </span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li><a class="nav__link is-current" href="#home" data-nav="home">Главная</a></li>
+          <li><a class="nav__link" href="#drinks" data-nav="drinks">Напитки</a></li>
+          <li><a class="nav__link" href="#about" data-nav="about">О кофейне</a></li>
+          <li><a class="nav__link" href="#contacts" data-nav="contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Открыть меню">
+        <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Главный экран -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__intro reveal">
+          <p class="eyebrow">Кофейня · авторские напитки</p>
+
+          <span class="logo-stack logo-stack--hero" aria-hidden="true">
+            <img class="logo-stack__img is-active" src="assets/logo/logo_base.png" data-logo="base" alt="" width="1200" height="1200">
+            <img class="logo-stack__img" src="assets/logo/logo_velvet.png" data-logo="velvet" alt="" width="1200" height="1200">
+            <img class="logo-stack__img" src="assets/logo/logo_blush.png" data-logo="blush" alt="" width="1200" height="1200">
+            <img class="logo-stack__img" src="assets/logo/logo_sage.png" data-logo="sage" alt="" width="1200" height="1200">
+          </span>
+
+          <h1 class="hero__title" id="hero-title"><span class="sr-only">АРОМАТИКА. </span>Вкус начинается с цвета.</h1>
+          <p class="hero__lead">Авторские кофейные напитки, которые хочется сначала рассмотреть, а потом попробовать.</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contacts">Жду тебя в АРОМАТИКЕ</a>
+            <a class="btn btn--solid-text" href="#drinks">Смотреть коллекцию</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Коллекция авторских напитков -->
+    <section class="section drinks-section" id="drinks" aria-labelledby="drinks-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Коллекция</p>
+          <h2 class="section-title" id="drinks-title">У каждого напитка свой характер</h2>
+        </div>
+
+        <div class="drinks-grid">
+          <button class="drink drink--card reveal" type="button" data-drink="velvet" aria-pressed="false">
+            <span class="drink__media" style="--ratio: 1200 / 878">
+              <img class="drink__img drink__img--mono" src="assets/cups/velvet_mono.png" alt="" width="1200" height="878" loading="lazy">
+              <img class="drink__img drink__img--color" src="assets/cups/velvet_master.png" alt="" width="1200" height="878" loading="lazy">
+            </span>
+            <span class="drink__meta">
+              <span class="drink__name">VELVET</span>
+              <span class="drink__hint">Нажми, чтобы раскрыть вкус</span>
+              <span class="drink__kind">ванильный раф</span>
+              <span class="drink__phrase">
+                <span class="drink__reveal">С первого взгляда — настроение. С первого вкуса — ваниль.</span>
+              </span>
+            </span>
+          </button>
+
+          <button class="drink drink--card reveal" type="button" data-drink="blush" aria-pressed="false">
+            <span class="drink__media" style="--ratio: 1200 / 843">
+              <img class="drink__img drink__img--mono" src="assets/cups/blush_mono.png" alt="" width="1200" height="843" loading="lazy">
+              <img class="drink__img drink__img--color" src="assets/cups/blush_master.png" alt="" width="1200" height="843" loading="lazy">
+            </span>
+            <span class="drink__meta">
+              <span class="drink__name">BLUSH</span>
+              <span class="drink__hint">Нажми, чтобы раскрыть вкус</span>
+              <span class="drink__kind">малиновый раф</span>
+              <span class="drink__phrase">
+                <span class="drink__reveal">С первого взгляда — искра. С первого вкуса — малина.</span>
+              </span>
+            </span>
+          </button>
+
+          <button class="drink drink--card reveal" type="button" data-drink="sage" aria-pressed="false">
+            <span class="drink__media" style="--ratio: 1200 / 859">
+              <img class="drink__img drink__img--mono" src="assets/cups/sage_mono.png" alt="" width="1200" height="859" loading="lazy">
+              <img class="drink__img drink__img--color" src="assets/cups/sage_master.png" alt="" width="1200" height="859" loading="lazy">
+            </span>
+            <span class="drink__meta">
+              <span class="drink__name">SAGE</span>
+              <span class="drink__hint">Нажми, чтобы раскрыть вкус</span>
+              <span class="drink__kind">фисташковый латте</span>
+              <span class="drink__phrase">
+                <span class="drink__reveal">С первого взгляда — гармония. С первого вкуса — фисташка.</span>
+              </span>
+            </span>
+          </button>
+        </div>
+
+        <p class="drinks-hint reveal">Каждый напиток сначала можно рассмотреть, а потом раскрыть</p>
+      </div>
+    </section>
+
+    <!-- О кофейне: интерактивная карточка с трёхмерным переворотом -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">О кофейне</p>
+          <h2 class="sr-only" id="about-title">Не просто кофе. Маленькое впечатление</h2>
+        </div>
+
+        <button class="flip-card reveal" type="button" aria-pressed="false"
+                aria-label="Не просто кофе. Маленькое впечатление. Нажмите, чтобы перевернуть карточку и узнать о кофейне">
+          <span class="flip-card__inner">
+            <span class="flip-card__face flip-card__face--front" aria-hidden="true">
+              <img src="assets/gallery/cafe_mono.png" alt="" width="1344" height="768">
+              <span class="flip-card__front-caption">Не просто кофе.<br>Маленькое впечатление.</span>
+              <span class="flip-card__front-hint" aria-hidden="true"><span class="flip-card__front-hint-icon">↻</span><span>Нажми, чтобы перевернуть</span></span>
+            </span>
+            <span class="flip-card__face flip-card__face--back" aria-hidden="true">
+              <img src="assets/gallery/cafe_main.png" alt="" width="1344" height="768">
+              <span class="flip-card__back-text">
+                <span class="flip-card__copy">АРОМАТИКА — место для тех, кто любит открывать новое и замечать красоту в деталях.</span>
+                <span class="flip-card__copy">Мы создаём авторские напитки, в которых встречаются вкус, аромат и цвет. У каждого своя история, которую интереснее всего узнать с первым глотком.</span>
+                <span class="flip-card__hint flip-card__hint--back" aria-hidden="true">↻</span>
+              </span>
+            </span>
+          </span>
+        </button>
+        <p class="sr-only" id="flip-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- Приглашение -->
+    <section class="section invite" id="invite" aria-labelledby="invite-title">
+      <div class="container invite__inner reveal">
+        <p class="eyebrow">Выбери настроение</p>
+        <h2 class="section-title" id="invite-title">Какой вкус откроешь ты?</h2>
+        <p class="section-lead">Выбирай настроение, находи свой любимый напиток и заглядывай в АРОМАТИКУ.</p>
+
+        <div class="moods" aria-label="Выбрать вкус">
+          <button class="mood mood--velvet" type="button" data-drink="velvet" aria-pressed="false"><span class="mood__dot" aria-hidden="true"></span>VELVET</button>
+          <button class="mood mood--blush" type="button" data-drink="blush" aria-pressed="false"><span class="mood__dot" aria-hidden="true"></span>BLUSH</button>
+          <button class="mood mood--sage" type="button" data-drink="sage" aria-pressed="false"><span class="mood__dot" aria-hidden="true"></span>SAGE</button>
+        </div>
+
+        <div class="invite__actions">
+          <a class="btn btn--solid-text" href="#drinks">Смотреть коллекцию</a>
+          <a class="btn btn--primary" href="#contacts">Жду тебя в АРОМАТИКЕ</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container">
+        <div class="section-head section-head--left reveal">
+          <p class="eyebrow">Как нас найти</p>
+          <h2 class="section-title" id="contacts-title">Жду тебя в АРОМАТИКЕ.</h2>
+          <p class="section-lead">Выбирай свой вкус. А мы будем ждать тебя.</p>
+        </div>
+
+        <div class="contacts__grid">
+          <div class="contacts__info reveal">
+            <dl class="contact-list">
+              <div class="contact-list__item">
+                <dt>Адрес</dt>
+                <dd>Москва, ул. Кофейная, 7</dd>
+              </div>
+              <div class="contact-list__item">
+                <dt>График работы</dt>
+                <dd>Ежедневно, 09:00–21:00</dd>
+              </div>
+              <div class="contact-list__item">
+                <dt>Телефон</dt>
+                <dd>+7 (000) 000-00-00</dd>
+              </div>
+              <div class="contact-list__item">
+                <dt>Почта</dt>
+                <dd>hello@aromatika.example</dd>
+              </div>
+              <div class="contact-list__item">
+                <dt>Telegram</dt>
+                <dd><a href="#contacts" data-demo="Telegram-канал появится вместе с реальными контактами">@aromatika_demo</a></dd>
+              </div>
+              <div class="contact-list__item">
+                <dt>Социальная сеть</dt>
+                <dd><a href="#contacts" data-demo="Страница в социальной сети появится вместе с реальными контактами">@aromatika_demo</a></dd>
+              </div>
+            </dl>
+            <p class="demo-note">Контактные данные демонстрационные: реального адреса у учебного проекта пока нет.</p>
+          </div>
+
+          <div class="contacts__map reveal">
+            <div class="map" role="img" aria-label="Визуальная заглушка карты. Реальная карта будет подключена после уточнения адреса.">
+              <div class="map__grid" aria-hidden="true"></div>
+              <div class="map__pin" aria-hidden="true"><span></span></div>
+              <div class="map__label" aria-hidden="true">
+                <strong>АРОМАТИКА</strong>
+                <small>Москва, ул. Кофейная, 7</small>
+              </div>
+              <p class="map__note">Здесь появится карта после уточнения реального адреса</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo-stack logo-stack--footer" aria-hidden="true">
+          <img class="logo-stack__img is-active" src="assets/logo/logo_base.png" data-logo="base" alt="" width="1200" height="1200">
+          <img class="logo-stack__img" src="assets/logo/logo_velvet.png" data-logo="velvet" alt="" width="1200" height="1200">
+          <img class="logo-stack__img" src="assets/logo/logo_blush.png" data-logo="blush" alt="" width="1200" height="1200">
+          <img class="logo-stack__img" src="assets/logo/logo_sage.png" data-logo="sage" alt="" width="1200" height="1200">
+        </span>
+        <p class="footer__slogan">АРОМАТИКА<br><span>Вкус начинается с цвета</span></p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Навигация в нижней части сайта">
+        <p class="footer__heading">Разделы</p>
+        <ul>
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#drinks">Напитки</a></li>
+          <li><a href="#about">О кофейне</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__contacts">
+        <p class="footer__heading">На связи</p>
+        <p>hello@aromatika.example</p>
+        <p>Ежедневно, 09:00–21:00</p>
+        <p><a href="#contacts" data-demo="Telegram-канал появится вместе с реальными контактами">@aromatika_demo</a></p>
+        <p><a href="#contacts" data-demo="Страница в социальной сети появится вместе с реальными контактами">@aromatika_demo</a></p>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span data-year>2026</span> АРОМАТИКА. Учебный проект.</p>
+      <p>Демонстрационные контакты · реальная карта будет добавлена после уточнения адреса</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <p class="sr-only" id="theme-status" role="status" aria-live="polite"></p>
+</body>
+</html>
